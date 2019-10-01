@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	text-decoration: none !important;
+	color: black;
+	padding: 0;
+}
+body{
+	font-size: 2rem;
+	height: 100vh;
+}
+/*.back{
+	background-image: linear-gradient(to bottom, #ec5f93 50%, #E77869); 
+	width: 100vw;
+	height: 100vh;
+}*/
+h1, h4{
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+h4{
+	color: gray;
+}
+#avatar{
+	border-radius: 50%;
+	width: 128px;
+	height: 128px;
+	margin-right: 4%;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	padding-bottom: 10px;
+}
+.flex{
+	display: flex;
+}
+.data{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color:  #f2f2f2;*/
+}
+.mid{
+	width: 50%;
+}
+.der{
+	background-image: url("img/2.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	height: 100vh;
+}
+.space{
+	margin: 1%;
+}
+.icons{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #F95658;
+}
+.icons:hover{
+	color: #5658f9;
+	text-decoration: none;
+  	transition: all 0.4s ease-out;
+}
+h6{
+	font-family: 'Be Vietnam', sans-serif;
+}
+@media screen and (max-width: 950px) {
+  .mid{
+	width: 100%;
+  }
+  .flex{
+  	flex-direction:column;
+  }
+  h1, h4{
+    font-family: 'Big Shoulders Display', sans-serif;
+  }
+  h1{
+  	font-size: 1.5rem;
+  }
+  h4{
+  	font-size: 0.8rem;
+  	color: gray;
+  }
+  h6{
+	font-family: 'Be Vietnam', sans-serif;
+  }  
+  body{
+  	font-size: 1rem;
+  }
+  .der{
+	background-position-x: center;
+	background-position-y: 0;
+	height: 50vh;
+  }
+  #avatar{
+	margin-right: 10%;
+}
+}
