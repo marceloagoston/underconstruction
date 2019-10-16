@@ -8,11 +8,10 @@ body{
 	font-size: 2rem;
 	height: 100vh;
 }
-/*.back{
-	background-image: linear-gradient(to bottom, #ec5f93 50%, #E77869); 
-	width: 100vw;
-	height: 100vh;
-}*/
+.centrar{
+	text-align: center;
+	align-items: center;
+}
 h1, h4{
     font-family: 'Big Shoulders Display', sans-serif;
 }
@@ -24,6 +23,9 @@ h4{
 }
 div a{
 	color: #b38600;
+}
+.fuente{
+	font-family: 'Big Shoulders Display', sans-serif;
 }
 #avatar{
 	border-radius: 50%;
@@ -39,41 +41,49 @@ footer{
 	width: 100%;
 	height: 50vh;
 	color: white;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1f;
+}
+#subfoot{
+	width: 100%;
+	height: 30vh;
+	color: black;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr ;
 }
 .contact{
 	font-size: 1.3rem;
 }
 .contact_icon{
-	color: white;
+	color: black;
 }
 .center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 50px;
-	padding-bottom: 10px;
+	display: grid;
+	padding-left: 10%;
+	grid-template-columns: 1fr 3fr;
 }
 .flex{
 	display: flex;
 }
 .data{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
 	padding-top: 10%;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 10%;
 }
 .mid{
 	width: 50%;
+	display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .der{
 	background-image: url("img/2.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;
-	height: 100vh;
+	height: 64vh;
 }
 .space{
 	margin: 1%;
@@ -96,6 +106,18 @@ h6{
 .cat{
 	color:#333333;
 	font-size: 30vh;
+}
+.division{
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	align-items: center;
+}
+.linea{
+	background: #dcd8d6;
+	height: 2px;
+}
+.contacto{
+	text-align: center;
 }
 @media screen and (max-width: 950px) {
   .mid{
@@ -127,12 +149,44 @@ h6{
   .der{
 	background-position-x: center;
 	background-position-y: 0;
-	/*height: 50vh;*/
+	height: 40vh;
   }
   #avatar{
 	margin-right: 10%;
 }
 .contact{
-	font-size: 1rem;
+	font-size: .8rem;
 }
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	padding-bottom: 10px;
+	padding-top:10px;
+}
+.dropdown-menu.show{
+	font-size: 0.5rem;
+}
+.data{
+	display: grid;
+	padding-top: 10%;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 0;
+	padding-top: 1%;
+}
+#subfoot {
+    width: 100%;
+    height: 30vh;
+    color: black;
+	display: grid;
+	grid-template-columns: 1fr ;
+}
+.division{
+	grid-template-columns: 2fr 2fr 2fr;
+}
+}
+.textcat{
+	color: #555555;
+	font-size: 3vw;
 }
